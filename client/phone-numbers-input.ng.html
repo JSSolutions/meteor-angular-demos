@@ -1,11 +1,13 @@
 <div class="phone-numbers-input">
-    <div class="form-group">
-        <label for="work-number">Work:</label>
-        <input type="text" id="work-number" class="form-control">
-    </div>
+    <form novalidate>
+        <div class="form-group">
+            <label for="work-number">Work:</label>
+            <input type="text" id="work-number" class="form-control" ng-model="work" phone-number="true">
+        </div>
 
-    <div class="form-group">
-        <label for="home-number">Home:</label>
-        <input type="text" id="home-number" class="form-control">
-    </div>
+        <div class="form-group">
+            <label for="home-number">Home:</label>
+            <input type="text" id="home-number" class="form-control" ng-model="home" phone-number="true">
+        </div>
+    </form>
 </div>
